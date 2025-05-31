@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Button from './ui/Button'
 import { ShoppingCart, Menu, X } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,12 +20,12 @@ const NavBar = () => {
             </div>
 
             <nav className='hidden md:flex items-center space-x-8'>
-                <a href="" className='text-blue-900 hover:text-orange-400 font-medium transition-colors duration-200'>
+                <Link to="/" className='text-blue-900 hover:text-orange-400 font-medium transition-colors duration-200'>
                     Home
-                </a>
-                <a href="" className='text-blue-900 hover:text-orange-400 font-medium transition-colors duration-200'>
+                </Link>
+                <Link to="/products" className='text-blue-900 hover:text-orange-400 font-medium transition-colors duration-200'>
                     Products
-                </a>
+                </Link>
                 <a href="" className='text-blue-900 hover:text-orange-400 font-medium transition-colors duration-200'>
                     Services
                 </a>
