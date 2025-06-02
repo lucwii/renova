@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import ProductCard from '../components/ProductCard'
+import ProductFilters from '../components/ProductFilters'
 
 const Products = () => {
     const [selectedCategory, setSelectedCategory] = useState<string>("")
@@ -81,6 +82,13 @@ const Products = () => {
             </div>
 
             <div className="container mx-auto px-4 py-8">
+            <ProductFilters
+            categories={ (categories || []).filter((c): c is string => c !== null) }
+            selectedCategory={selectedCategory}
+            onCategoryChange={setSelectedCategory}
+            showFeaturedOnly={showFeaturedOnly}
+            onFeaturedToggle={setShowFeaturedOnly}
+          />
                 {isLoading ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
                         {[...Array(8)].map((_, i) => (
