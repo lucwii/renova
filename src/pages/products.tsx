@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { supabase } from '../integrations/supabase/client'
 import { useQuery } from '@tanstack/react-query'
 import NavBar from '../components/NavBar'
@@ -113,6 +113,7 @@ const Products = () => {
                 )}
             </div>
         </main>
+    <Footer />
     </div>
   )
 }
