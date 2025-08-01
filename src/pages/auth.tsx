@@ -133,10 +133,44 @@ const Auth = () => {
                 </div>
                 <Button
                 type='submit'
-                className='w-full bg-blue-900 hover:bg-blue-400 text-white transition duration-400'
+                className='w-full bg-blue-900 hover:bg-blue-400 text-white transition duration-400
+                hover:text-black'
                 disabled={loading}
                 >
                   {loading ? 'Signing In...' : 'Sign In'}
+                </Button>
+              </form>
+            </TabsContent>
+
+            <TabsContent value='signup'>
+              <form action="" onSubmit={handleSignUp} className='space-y-4'>
+                <div className="space-y-2">
+                  <Label>Email</Label>
+                  <Input 
+                  id='signup-email'
+                  type='email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder='Enter your email'
+                  required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label>Password</Label>
+                  <Input 
+                  id='signup-password'
+                  type='password'
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder='Enter your password'
+                  required
+                  />
+                </div>
+                <Button 
+                type='submit'
+                className='text-white w-full transition duration-500 hover:bg-blue-400 hover:text-black'
+                >
+                  {loading ? 'Creating account...' : 'Create Account'}
                 </Button>
               </form>
             </TabsContent>
