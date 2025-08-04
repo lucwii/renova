@@ -4,6 +4,7 @@ import Index from "./pages";
 import Products from "./pages/products";
 import Auth from "./pages/auth";
 import { AuthProvider } from "./contexts/AuthContext";
+import About from "./pages/about";
 
 
 const queryClient = new QueryClient();
@@ -16,6 +17,7 @@ const App = () => (
           <Route path="/" element={<Index/>} />
           <Route path="/products" element={<Products/>} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
