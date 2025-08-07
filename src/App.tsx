@@ -6,6 +6,7 @@ import Auth from "./pages/auth";
 import { AuthProvider } from "./contexts/AuthContext";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Services from "./pages/services";
 
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/auth" element={<Auth />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
