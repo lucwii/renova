@@ -57,7 +57,7 @@ const TestemonialsSection = () => {
                         >
                             {testimonials.map((testimonial) => (
                                 <div key={testimonial.id} className='w-full flex-shrink-0 px-4'>
-                                    <Card className='shadow-lg'>
+                                    <Card className='shadow-xl border-gray-200'>
                                         <CardContent className='p-8'>
                                             <div className="flex flex-col items-center text-center">
                                                 <div className="mb-4">

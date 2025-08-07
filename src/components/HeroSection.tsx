@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from './ui/Button'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const HeroSection = () => {
+    const navigate = useNavigate()
   return (
     <div className="relative bg-gray-100 overflow-hidden">
         <div className="container mx-auto px-4 py-16 md:py-24">
@@ -14,10 +16,10 @@ const HeroSection = () => {
                         Your one-stop shop for quality building materials, paints, and all home renovation essentials. Whether you're a professional or DIY enthusiast, we've got everything you need.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Button variant="default" className='text-white text-lg px-8 py-6 hover:bg-blue-300' size="lg">
+                        <Button onClick={() => navigate('/products')} variant="default" className='text-white text-lg px-8 py-6 hover:bg-blue-300 transition duration-300' size="lg">
                             Shop Now
                         </Button>
-                        <Button variant="outline" size="lg" className='text-lg px-8 py-6'>
+                        <Button variant="outline" size="lg" className='text-lg px-8 py-6 border-gray-200 border-1 bg-gray-200 shadow-lg transition duration-300 hover:bg-orange-400'>
                             Our Services
                         </Button>
                     </div>

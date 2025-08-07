@@ -19,7 +19,7 @@ interface ProdcutCardProps {
 
 const ProductCard = ({product}: ProdcutCardProps) => {
   return (
-    <Card className='h-full flex flex-col hover:shadow-lg transition-shadow'>
+    <Card className='h-full flex flex-col hover:shadow-lg transition-shadow border-gray-200'>
         <div className="relative">
             <img 
             src={product.image_url || '/placeholder.svg'} 

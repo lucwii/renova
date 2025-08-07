@@ -20,7 +20,7 @@ const ProductFilters = ({
   onFeaturedToggle
 }: ProductFiltersProps) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm border">
+    <div className="bg-white p-6 rounded-lg shadow-sm border-gray-200 border-1">
       <h2 className='font-semibold text-lg mb-4'>Filters</h2>
 
       <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
@@ -29,7 +29,7 @@ const ProductFilters = ({
             Category
           </Label>
           <Select value={selectedCategory || "all"} onValueChange={(value) => onCategoryChange(value === "all" ? "" : value)}>
-            <SelectTrigger id='category-select' className='w-full'>
+            <SelectTrigger id='category-select' className='w-full border-gray-200'>
               <SelectValue placeholder="All categories" />
             </SelectTrigger>
             <SelectContent>

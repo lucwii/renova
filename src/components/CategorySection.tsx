@@ -44,7 +44,7 @@ const CategorySection = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-10'>
           {categories.map((category) => (
-            <Card key={category.id} className='overflow-hidden transition-all duration-300 hover:shadow-lg'>
+            <Card key={category.id} className='overflow-hidden transition-all duration-300 hover:shadow-xl border-gray-200'>
               <div className="relative h-56">
                 <img 
                     src={category.image} 
