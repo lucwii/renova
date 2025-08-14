@@ -1,7 +1,7 @@
-import React from 'react'
 import Navbar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { Card, CardContent } from '../components/ui/Card'
+import ChatWidget from '../components/chat/ChatWidget'
 
 const About = () => {
   return (
@@ -92,6 +92,7 @@ const About = () => {
             </section>
         </main>
         <Footer />
+        <ChatWidget />
     </div>
   )
 }
