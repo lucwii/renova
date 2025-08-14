@@ -122,14 +122,14 @@ const LiveChat = () => {
       };
   return (
     <Card className='w-full max-w-md mx-auto h-96 flex flex-col'>
-      <CardHeader className='pb-3'>
-        <CardTitle className='flex items-center gap-2 text-lg'>
-          <MessageCircle className='h-5 w-5' />
+      <CardHeader className='pb-3 bg-white'>
+        <CardTitle className='flex items-center gap-2 text-lg text-black'>
+          <MessageCircle className='h-5 w-5 text-black' />
           Live Chat
         </CardTitle>
       </CardHeader>
 
-      <CardContent className='flex flex-1 flex-col gap-3'>
+      <CardContent className='flex flex-1 flex-col gap-3 bg-white'>
         <div className="flex-1 overflow-y-auto space-y-2 max-h-64">
           {messages.map((message) => (
             <div key={message.id}
@@ -141,7 +141,7 @@ const LiveChat = () => {
               className={`max-w-[80%] rounded-lg px-3 py-2 text-sm ${
                 message.user_id === user?.id
                   ? 'bg-gray-100 text-black'
-                  : 'bg-gray-200'
+                  : 'bg-gray-200 text-black'
               }`}
               >
                 <p className='break-words'>{message.message}</p>

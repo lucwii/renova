@@ -6,6 +6,7 @@ import PromoBanner from '../components/PromoBanner'
 import FeaturesSection from '../components/FeaturesSection'
 import TestemonialsSection from '../components/TestemonialsSection'
 import Footer from '../components/Footer'
+import ChatWidget from '../components/chat/ChatWidget'
 
 
 function Index() {
@@ -23,6 +24,7 @@ function Index() {
         <TestemonialsSection />
       </main>
     <Footer />
+    <ChatWidget />
     </div>
     </>
   )
