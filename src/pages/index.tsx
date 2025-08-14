@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import NavBar from '../components/NavBar'
 import HeroSection from '../components/HeroSection'
 import CategorySection from '../components/CategorySection'
@@ -10,7 +9,6 @@ import ChatWidget from '../components/chat/ChatWidget'
 
 
 function Index() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

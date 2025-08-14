@@ -7,6 +7,7 @@ import { Input } from '../components/ui/Input'
 import TextArea from '../components/ui/TextArea'
 import Button from '../components/ui/Button'
 import { Clock, Mail, MapPin, Phone } from 'lucide-react'
+import ChatWidget from '../components/chat/ChatWidget'
 
 const contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -132,6 +133,7 @@ const contact = () => {
             </section>
           </main>
         <Footer />
+        <ChatWidget />
     </div>
   )
 }

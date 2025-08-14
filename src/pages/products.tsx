@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import ProductCard from '../components/ProductCard'
 import ProductFilters from '../components/ProductFilters'
+import ChatWidget from '../components/chat/ChatWidget'
 
 const Products = () => {
     const [selectedCategory, setSelectedCategory] = useState<string>("")
@@ -114,6 +115,7 @@ const Products = () => {
             </div>
         </main>
     <Footer />
+    <ChatWidget />
     </div>
   )
 }

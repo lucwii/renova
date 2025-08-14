@@ -1,8 +1,8 @@
-import React from 'react'
 import Navbar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import ChatWidget from '../components/chat/ChatWidget';
 
 const Services = () => {
     const services = [
@@ -80,6 +80,7 @@ const Services = () => {
                 </section>
             </main>
         <Footer />
+        <ChatWidget />
     </div>
   )
 }
